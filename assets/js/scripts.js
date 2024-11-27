@@ -14,4 +14,11 @@ toggleTheme.addEventListener('click', () => {
   }
 });
 
+const menulinks = document.querySelectorAll(".menu__link");
 
+menulinks.forEach(item => {
+  item.addEventListener("click", () => {
+    menulinks.forEach(i => i.classList.remove("active"));
+    item.classList.add("active");
+  })
+})

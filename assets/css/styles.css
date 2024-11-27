@@ -139,6 +139,7 @@ p {
 
 .menu__icon {
     font-size: 1.5rem;
+    padding-left: 10px;
 }
 
 .menu__text {
@@ -156,6 +157,15 @@ p {
 
 .menu--social {
     gap: 1rem;
+}
+
+.menu__icon {
+    cursor: pointer;
+}
+
+.menu__icon:hover {
+    transform: scale(1.05);
+    transition: ease-in-out .3s;
 }
 
 .btn {
@@ -246,12 +256,39 @@ main {
     border-radius: 100%;
 }
 
+/****Sesão Sobre****/
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1rem;  
+}
+
+img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50rem;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     margin-bottom: 5rem;
+}
+
+.contacts .main__content1 {
+    align-items: center;
+}
+
+.name-icon {
+    margin-left: 5px;
+}
+
+.name-icon:hover {
+    color: var(--primary-color);
+    font-weight: 600
 }
 
 footer, .footer, a {
@@ -292,7 +329,17 @@ footer, .footer, a {
         margin-top: -6rem;
     }
 
+    .about {
+        padding: 5rem 15rem 2rem;
+    }
 
+    .contacts .main__content1 {
+        padding: 12rem 15rem 2rem;
+    }
+
+    .contacts .main__content1 h2 {
+        font-size: 3rem;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -314,6 +361,26 @@ footer, .footer, a {
         font-size: 3.5rem;
         width: 60%;
     }
+
+    .about {
+        padding: 5rem 15rem 2rem;
+    }
+
+    .about__description h2 {
+        font-size: 3.5rem;
+    }
+
+    .about__description p {
+        font-size: 3.5rem;
+    }
+
+    .contacts .main__content1 {
+        padding: 27rem 15rem 2rem;
+    }
+
+    .contacts .main__content1 h2 {
+        font-size: 2rem;
+    }
 }  
 
 @media (min-width: 1400px) {
@@ -322,11 +389,31 @@ footer, .footer, a {
     }
 
     main {
-        padding: 12rem 9rem 2rem;
+        padding: 2rem 9rem 2rem;
     }
 
     .skills {
         padding: 10rem 15rem 4rem;
+    }
+
+    .about {
+        padding: 5rem 15rem 2rem;
+    }
+
+    .about__description h2 {
+        font-size: 3.5rem;
+    }
+
+    .about__description p {
+        font-size: 1.5rem;
+    }
+
+    .contacts .main__content1 {
+        padding: 27rem 15rem 2rem;
+    }
+
+    .contacts .main__content1 h2 {
+        font-size: 5rem;
     }
 }    
 
